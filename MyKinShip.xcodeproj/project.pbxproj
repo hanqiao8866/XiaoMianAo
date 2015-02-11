@@ -10,7 +10,6 @@
 		93B490E31A8A69EE00E56D71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B490E21A8A69EE00E56D71 /* main.m */; };
 		93B490E61A8A69EE00E56D71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B490E51A8A69EE00E56D71 /* AppDelegate.m */; };
 		93B490E81A8A69EE00E56D71 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B490E71A8A69EE00E56D71 /* Images.xcassets */; };
-		93B490EB1A8A69EE00E56D71 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B490E91A8A69EE00E56D71 /* LaunchScreen.xib */; };
 		93B490F71A8A69EE00E56D71 /* MyKinShipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B490F61A8A69EE00E56D71 /* MyKinShipTests.m */; };
 		93B491051A8A6D8E00E56D71 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93B491011A8A6D8E00E56D71 /* Icon-40@2x.png */; };
 		93B491061A8A6D8E00E56D71 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93B491021A8A6D8E00E56D71 /* Icon-40@3x.png */; };
@@ -299,7 +298,6 @@
 				93B491381A8A775A00E56D71 /* mainicon9@2x.png in Resources */,
 				93B491051A8A6D8E00E56D71 /* Icon-40@2x.png in Resources */,
 				93B491371A8A775A00E56D71 /* mainicon8@3x.png in Resources */,
-				93B490EB1A8A69EE00E56D71 /* LaunchScreen.xib in Resources */,
 				93B4912A1A8A775A00E56D71 /* mainicon2@2x.png in Resources */,
 				93B491281A8A775A00E56D71 /* mainicon1@2x.png in Resources */,
 				93B491311A8A775A00E56D71 /* mainicon5@3x.png in Resources */,
@@ -458,7 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PREFIX_HEADER = /Users/xietao/Desktop/MyKinShip/MyKinShip/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/ouyazhou/Documents/XiaoMianAo/XiaoMianAo/MyKinShip/PrefixHeader.pch;
 				INFOPLIST_FILE = MyKinShip/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -472,7 +470,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PREFIX_HEADER = /Users/xietao/Desktop/MyKinShip/MyKinShip/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/ouyazhou/Documents/XiaoMianAo/XiaoMianAo/MyKinShip/PrefixHeader.pch;
 				INFOPLIST_FILE = MyKinShip/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -533,6 +531,7 @@
 				93B490FC1A8A69EE00E56D71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93B490FD1A8A69EE00E56D71 /* Build configuration list for PBXNativeTarget "MyKinShipTests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +540,7 @@
 				93B490FF1A8A69EE00E56D71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
