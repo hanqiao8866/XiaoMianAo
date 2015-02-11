@@ -1,0 +1,18 @@
+//
+//  PrefixHeader.pch
+//  MyKinShip
+//
+//  Created by 谢涛 on 15/2/11.
+//  Copyright (c) 2015年 谢涛. All rights reserved.
+//
+
+#ifndef MyKinShip_PrefixHeader_pch
+#define MyKinShip_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "CONST.h"
+#import "XTBaseViewController.h"
+
+#endif

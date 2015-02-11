@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IndexViewController">
+            <connections>
+                <outlet property="mainBackView" destination="t9I-kJ-Mbw" id="60L-kM-jcR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="testMap" translatesAutoresizingMaskIntoConstraints="NO" id="yvv-Rl-llq">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <view alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t9I-kJ-Mbw">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                    <subviews>
+                        <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainicon1.png" translatesAutoresizingMaskIntoConstraints="NO" id="eFi-Oh-EsN">
+                            <rect key="frame" x="35" y="30" width="60" height="60"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="DpQ-LY-RAr" appends="YES" id="uhe-jQ-fBw"/>
+                            </connections>
+                        </imageView>
+                        <imageView tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainicon2.png" translatesAutoresizingMaskIntoConstraints="NO" id="dgb-cR-ExL">
+                            <rect key="frame" x="130" y="30" width="60" height="60"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="sp4-c4-a9B" appends="YES" id="0MX-ha-c01"/>
+                            </connections>
+                        </imageView>
+                        <imageView tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainicon3.png" translatesAutoresizingMaskIntoConstraints="NO" id="tju-5V-6u3">
+                            <rect key="frame" x="225" y="30" width="60" height="60"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="8KS-Uw-Bmg" appends="YES" id="LbZ-eg-VPr"/>
+                            </connections>
+                        </imageView>
+                        <imageView tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainicon4.png" translatesAutoresizingMaskIntoConstraints="NO" id="mHC-Sc-3F6">
+                            <rect key="frame" x="35" y="120" width="60" height="60"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="jnD-Fy-iyp" appends="YES" id="kCH-ZM-dzB"/>
+                            </connections>
+                        </imageView>
+                        <imageView tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainicon5.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zle-Kx-evp">
+                            <rect key="frame" x="130" y="120" width="60" height="60"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="di0-lK-9BM" appends="YES" id="g1I-nL-HBZ"/>
+                            </connections>
+                        </imageView>
+                        <imageView tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainicon6.png" translatesAutoresizingMaskIntoConstraints="NO" id="jOk-MV-a8r">
+                            <rect key="frame" x="225" y="120" width="60" height="60"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="TOk-IW-LEC" appends="YES" id="6PB-Xu-SSS"/>
+                            </connections>
+                        </imageView>
+                        <imageView tag="8" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainicon8.png" translatesAutoresizingMaskIntoConstraints="NO" id="nWQ-TH-wn0">
+                            <rect key="frame" x="130" y="210" width="60" height="60"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="F2T-kC-aiT" appends="YES" id="Qug-M2-o0i"/>
+                            </connections>
+                        </imageView>
+                        <imageView tag="9" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainicon9.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fpi-T2-Wd4">
+                            <rect key="frame" x="225" y="210" width="60" height="60"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="RN2-A6-Kzb" appends="YES" id="zhh-mM-L2r"/>
+                            </connections>
+                        </imageView>
+                        <imageView tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainicon7.png" translatesAutoresizingMaskIntoConstraints="NO" id="fqe-53-lpH">
+                            <rect key="frame" x="35" y="210" width="60" height="60"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="LkC-vX-cGC" appends="YES" id="fls-dY-gRb"/>
+                            </connections>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <tapGestureRecognizer id="DpQ-LY-RAr">
+            <connections>
+                <action selector="tapMainIconGesture:" destination="-1" id="v3b-xb-2gb"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="sp4-c4-a9B">
+            <connections>
+                <action selector="tapMainIconGesture:" destination="-1" id="MRw-d4-HHe"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="8KS-Uw-Bmg">
+            <connections>
+                <action selector="tapMainIconGesture:" destination="-1" id="OiM-Wl-Atb"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="jnD-Fy-iyp">
+            <connections>
+                <action selector="tapMainIconGesture:" destination="-1" id="eSi-Ug-e5Y"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="di0-lK-9BM">
+            <connections>
+                <action selector="tapMainIconGesture:" destination="-1" id="3zH-yP-4p7"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="TOk-IW-LEC">
+            <connections>
+                <action selector="tapMainIconGesture:" destination="-1" id="h3E-ZD-A17"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="LkC-vX-cGC">
+            <connections>
+                <action selector="tapMainIconGesture:" destination="-1" id="t3q-Kb-L3m"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="F2T-kC-aiT">
+            <connections>
+                <action selector="tapMainIconGesture:" destination="-1" id="9vn-S2-FJN"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="RN2-A6-Kzb">
+            <connections>
+                <action selector="tapMainIconGesture:" destination="-1" id="EMP-yQ-I64"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="mainicon1.png" width="55" height="55"/>
+        <image name="mainicon2.png" width="55" height="55"/>
+        <image name="mainicon3.png" width="55" height="55"/>
+        <image name="mainicon4.png" width="55" height="55"/>
+        <image name="mainicon5.png" width="55" height="55"/>
+        <image name="mainicon6.png" width="55" height="55"/>
+        <image name="mainicon7.png" width="55" height="55"/>
+        <image name="mainicon8.png" width="55" height="55"/>
+        <image name="mainicon9.png" width="55" height="55"/>
+        <image name="testMap" width="64" height="45"/>
+    </resources>
+</document>
