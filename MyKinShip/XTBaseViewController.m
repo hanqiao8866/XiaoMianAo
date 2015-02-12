@@ -60,7 +60,7 @@
         case XTBackButtonItemStyle:
         {
             UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-            backBtn.frame = CGRectMake(0 , 0, 15, 20);
+            backBtn.frame = CGRectMake(0 , 0, 30, 35);
             [backBtn addTarget:self action:@selector(clickedBarButtonItemAction) forControlEvents:UIControlEventTouchUpInside];
             [backBtn setImage:[UIImage imageNamed:@"backbtn"] forState:UIControlStateNormal];
             UIBarButtonItem *navBackBtn = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
@@ -84,10 +84,10 @@
 - (void)configureRightBarButtonWithTitle:(NSString *)title withBackgroundImage:(UIImage *)bgImage action:(XTRightBarButtonActionBlock)action
 {
     UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    rightBtn.frame = CGRectMake(0.0, 0.0, 50.0, 30.0);
+    rightBtn.frame = CGRectMake(0.0, 0.0, 20.0, 20.0);
     [rightBtn addTarget:self action:@selector(clickedRightBarButtonItemAction) forControlEvents:UIControlEventTouchUpInside];
     [rightBtn setTitle:title forState:UIControlStateNormal];
-    [rightBtn setBackgroundImage:bgImage forState:UIControlStateNormal];
+    [rightBtn setImage:bgImage forState:UIControlStateNormal];
     UIBarButtonItem *navRightBtn = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
     self.navigationItem.rightBarButtonItem = navRightBtn;
 

@@ -7,11 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
+
+@interface LandscapeMPMoviePlayerViewController : MPMoviePlayerViewController
+
+@end
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    BMKMapManager *_mapManager;
+@public
+    LandscapeMPMoviePlayerViewController *moviePlayerController;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
 
+@end
+
+@interface AppDelegate(MovieControllerInternal)
+-(void)moviePlaybackComplete:(NSNotification *)notification;
 @end
 

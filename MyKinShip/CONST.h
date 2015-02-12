@@ -59,3 +59,7 @@
 
 #define CURRENTAPPVERSION 1
 
+
+#define MapKey @"WIcG0QjfyDiRjuwC1AGpgqEv"
+
+

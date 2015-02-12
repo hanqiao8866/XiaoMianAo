@@ -16,9 +16,6 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="testMap" translatesAutoresizingMaskIntoConstraints="NO" id="yvv-Rl-llq">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                </imageView>
                 <view alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t9I-kJ-Mbw">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
                     <subviews>
@@ -91,6 +88,7 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="417" y="76"/>
         </view>
         <tapGestureRecognizer id="DpQ-LY-RAr">
             <connections>
@@ -148,6 +146,5 @@
         <image name="mainicon7.png" width="55" height="55"/>
         <image name="mainicon8.png" width="55" height="55"/>
         <image name="mainicon9.png" width="55" height="55"/>
-        <image name="testMap" width="64" height="45"/>
     </resources>
 </document>

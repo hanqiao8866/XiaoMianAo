@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface IndexViewController : XTBaseViewController
+
 @property (weak, nonatomic) IBOutlet UIView *mainBackView;
+
 - (IBAction)tapMainIconGesture:(UITapGestureRecognizer *)sender;
 
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LocalWeatherViewController : UIViewController
+@interface LocalWeatherViewController : XTBaseViewController
 
 @end
