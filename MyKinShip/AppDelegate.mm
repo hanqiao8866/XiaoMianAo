@@ -42,7 +42,7 @@
 //    moviePlayerController.moviePlayer.controlStyle = MPMovieControlStyleNone;
 //    moviePlayerController.moviePlayer.scalingMode = MPMovieScalingModeFill;
 //    [moviePlayerController.moviePlayer play];
-    
+//    
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[IndexViewController alloc] init]];
     self.window.rootViewController = nav;

@@ -22,7 +22,7 @@
     
     BMKMapView *mapView; // 地图视图
     BMKLocationService *_locService; // 地图定位功能
-    BMKGeoCodeSearch* _geocodesearch; // 地理编码转换
+    BMKGeoCodeSearch *_geocodesearch; // 地理编码转换
     
     UIView *showGeoView; // 显示地理坐标反编码后的地址视图
     UILabel *geolabel; // 显示反地理编码的地址
@@ -48,6 +48,14 @@
     mapView = [[BMKMapView alloc] initWithFrame:CGRectMake(0, 0, MainScreenWidth, MainScreenHight)];
     [self.view addSubview:mapView]; // 添加百度地图
     [self.view addSubview:self.mainBackView]; // 添加选择视图
+    self.mainBackView.userInteractionEnabled = YES;
+    
+    
+    UISwipeGestureRecognizer *swipGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeGesture:)];
+    swipGesture.direction = UISwipeGestureRecognizerDirectionUp;
+    [self.mainBackView addGestureRecognizer:swipGesture];
+    
+    
     
     //设置定位精确度，默认：kCLLocationAccuracyBest
     [BMKLocationService setLocationDesiredAccuracy:kCLLocationAccuracyNearestTenMeters];
@@ -74,6 +82,26 @@
     geolabel.font = [UIFont systemFontOfSize:15.0f];
     [showGeoView addSubview:geolabel];
     
+}
+
+- (void)swipeGesture:(UISwipeGestureRecognizer *)gesture
+{
+    [UIView animateWithDuration:0.5 animations:^{
+        self.mainBackView.frame = CGRectMake(0, -400, MainScreenWidth, 300);
+        mapView.zoomLevel = 13;
+        
+    } completion:^(BOOL finished) {
+        backBtn.hidden = NO;
+        [self configureNavgationItemTitle:@"父母位置"];
+        //启动LocationService
+        [_locService startUserLocationService];
+        mapView.showsUserLocation = NO;//先关闭显示的定位图层
+        mapView.userTrackingMode = BMKUserTrackingModeNone;//设置定位的状态
+        mapView.showsUserLocation = YES;//显示定位图层
+        
+        
+    }];
+
 }
 
 //根据anntation生成对应的View
@@ -131,6 +159,8 @@
 - (void)didFailToLocateUserWithError:(NSError *)error
 {
     DLog(@"location error");
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"定位失败" delegate:self cancelButtonTitle:@"确定" otherButtonTitles: nil];
+//    [alert show];
 }
 
 #pragma mark -
@@ -163,14 +193,14 @@
 
 }
 
--(void) onGetReverseGeoCodeResult:(BMKGeoCodeSearch *)searcher result:(BMKReverseGeoCodeResult *)result errorCode:(BMKSearchErrorCode)error
+- (void)onGetReverseGeoCodeResult:(BMKGeoCodeSearch *)searcher result:(BMKReverseGeoCodeResult *)result errorCode:(BMKSearchErrorCode)error
 {
     NSArray* array = [NSArray arrayWithArray:mapView.annotations];
     [mapView removeAnnotations:array];
     array = [NSArray arrayWithArray:mapView.overlays];
     [mapView removeOverlays:array];
     if (error == 0) {
-        BMKPointAnnotation* item = [[BMKPointAnnotation alloc]init];
+        BMKPointAnnotation* item = [[BMKPointAnnotation alloc] init];
         item.coordinate = result.location;
         item.title = @"父母位置";
         [mapView addAnnotation:item];
@@ -227,9 +257,9 @@
                 [self configureNavgationItemTitle:@"父母位置"];
                 //启动LocationService
                 [_locService startUserLocationService];
-                mapView.showsUserLocation = NO;//先关闭显示的定位图层
-                mapView.userTrackingMode = BMKUserTrackingModeNone;//设置定位的状态
-                mapView.showsUserLocation = YES;//显示定位图层
+                mapView.showsUserLocation = NO; // 先关闭显示的定位图层
+                mapView.userTrackingMode = BMKUserTrackingModeNone; // 设置定位的状态
+                mapView.showsUserLocation = YES; // 显示定位图层
                 
                 
             }];

@@ -49,13 +49,13 @@
 {
     switch (style) {
         case XTBarButtonItemStyleSetting:
-            self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@""] style:UIBarButtonItemStyleBordered target:self action:@selector(clickedBarButtonItemAction)];
+            self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@""] style:UIBarButtonItemStylePlain target:self action:@selector(clickedBarButtonItemAction)];
             break;
         case XTBarButtonItemStyleMore:
-            self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@""] style:UIBarButtonItemStyleBordered target:self action:@selector(clickedBarButtonItemAction)];
+            self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@""] style:UIBarButtonItemStylePlain target:self action:@selector(clickedBarButtonItemAction)];
             break;
         case XTBarButtonItemStyleCamera:
-            self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@""] style:UIBarButtonItemStyleBordered target:self action:@selector(clickedBarButtonItemAction)];
+            self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@""] style:UIBarButtonItemStylePlain target:self action:@selector(clickedBarButtonItemAction)];
             break;
         case XTBackButtonItemStyle:
         {
