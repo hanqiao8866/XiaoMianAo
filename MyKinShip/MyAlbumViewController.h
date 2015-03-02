@@ -8,6 +8,6 @@
 
 #import "XTBaseViewController.h"
 
-@interface MyAlbumViewController : XTBaseViewController
+@interface MyAlbumViewController : XTBaseViewController <UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
 @end

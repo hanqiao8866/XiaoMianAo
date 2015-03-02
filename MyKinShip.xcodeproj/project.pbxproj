@@ -95,6 +95,7 @@
 		93B4913D1A8A82A100E56D71 /* backbtn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93B4913B1A8A82A100E56D71 /* backbtn@3x.png */; };
 		93B491411A8A86F700E56D71 /* LocalWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B4913F1A8A86F700E56D71 /* LocalWeatherViewController.m */; };
 		93B491421A8A86F700E56D71 /* LocalWeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B491401A8A86F700E56D71 /* LocalWeatherViewController.xib */; };
+		F5CB8FC81AA4C43100325AD4 /* AlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CB8FC71AA4C43100325AD4 /* AlbumCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -276,6 +277,8 @@
 		93B4913E1A8A86F700E56D71 /* LocalWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalWeatherViewController.h; sourceTree = "<group>"; };
 		93B4913F1A8A86F700E56D71 /* LocalWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalWeatherViewController.m; sourceTree = "<group>"; };
 		93B491401A8A86F700E56D71 /* LocalWeatherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalWeatherViewController.xib; sourceTree = "<group>"; };
+		F5CB8FC61AA4C43100325AD4 /* AlbumCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCollectionViewCell.h; sourceTree = "<group>"; };
+		F5CB8FC71AA4C43100325AD4 /* AlbumCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -476,6 +479,8 @@
 		93B490DF1A8A69EE00E56D71 /* MyKinShip */ = {
 			isa = PBXGroup;
 			children = (
+				F5CB8FC61AA4C43100325AD4 /* AlbumCollectionViewCell.h */,
+				F5CB8FC71AA4C43100325AD4 /* AlbumCollectionViewCell.m */,
 				93A16B3D1A8BCB0600BCD55C /* BaiduMapLib */,
 				93B491081A8A6E5F00E56D71 /* CONST.h */,
 				93B491111A8A731500E56D71 /* XTBaseViewController.h */,
@@ -722,6 +727,7 @@
 				93A16BA41A8BF4EC00BCD55C /* MyAlbumViewController.m in Sources */,
 				93A16B911A8BF18B00BCD55C /* ParentsBirthdayViewController.m in Sources */,
 				93B491131A8A731500E56D71 /* XTBaseViewController.m in Sources */,
+				F5CB8FC81AA4C43100325AD4 /* AlbumCollectionViewCell.m in Sources */,
 				93A16BB31A8BF52000BCD55C /* MySettingViewController.m in Sources */,
 				93A16B9F1A8BF43600BCD55C /* ChatViewController.m in Sources */,
 				93A16BA91A8BF50100BCD55C /* MyVideoViewController.m in Sources */,
